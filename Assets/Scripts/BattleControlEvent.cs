@@ -1102,7 +1102,7 @@ public class BattleControlEvent : MonoBehaviour {
     {
         FadeImage.DOFade(1, 0.5f);
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 
     bool IsEnemyAtkAnimation = false;

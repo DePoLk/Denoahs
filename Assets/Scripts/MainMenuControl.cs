@@ -93,7 +93,7 @@ public class MainMenuControl : MonoBehaviour {
     {
         FadeImage.DOFade(1, 0.5f);
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
 
     public void Stage1BtnOnClick()
