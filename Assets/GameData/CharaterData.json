@@ -1,1 +1,60 @@
-{"HidoruNo":1,"HidoruImg":"Hidoru","HidoruType":1,"HidoruLv":1,"HidoruExp":0,"HidoruNextExp":50,"HidoruMaxHp":150.0,"HidoruAtkBuffValue":15.0,"HidoruDefBuffValue":7.0,"HidoruMagicBuffValue":5.0,"HidoruHealBuffValue":8.0,"NaiaNo":2,"NaiaImg":"Naia","NaiaType":2,"NaiaLv":1,"NaiaExp":0,"NaiaNextExp":50,"NaiaMaxHp":220.0,"NaiaAtkBuffValue":10.0,"NaiaDefBuffValue":15.0,"NaiaMagicBuffValue":3.0,"NaiaHealBuffValue":5.0,"KoronaNo":3,"KoronaImg":"Korona","KoronaType":3,"KoronaLv":1,"KoronaExp":0,"KoronaNextExp":50,"KoronaMaxHp":120.0,"KoronaAtkBuffValue":5.0,"KoronaDefBuffValue":5.0,"KoronaMagicBuffValue":20.0,"KoronaHealBuffValue":10.0,"MiasaNo":4,"MiasaImg":"Miasa","MiasaType":4,"MiasaLv":1,"MiasaExp":0,"MiasaNextExp":50,"MiasaMaxHp":140.0,"MiasaAtkBuffValue":5.0,"MiasaDefBuffValue":6.0,"MiasaMagicBuffValue":8.0,"MiasaHealBuffValue":12.0}
+{
+    "Items": [
+        {
+            "id": 0,
+            "name": "Hidoru",
+            "Img": "Assets/Sprites/CharaterImg/Hidoru_1.png",
+            "Type": 1,
+            "Lv": 1,
+            "Exp": 0,
+            "MaxHp": 150,
+            "AtkBuffValue": 15,
+            "DefBuffValue": 7,
+            "MagicBuffValue": 5,
+            "HealBuffValue": 8,
+            "SpeedBuffValue": 15
+        },
+        {
+            "id": 1,
+            "name": "Naia",
+            "Img": "Assets/Sprites/CharaterImg/Naia_2.png",
+            "Type": 2,
+            "Lv": 1,
+            "Exp": 0,
+            "MaxHp": 220,
+            "AtkBuffValue": 10,
+            "DefBuffValue": 15,
+            "MagicBuffValue": 3,
+            "HealBuffValue": 5,
+            "SpeedBuffValue": 8
+        },
+        {
+            "id": 2,
+            "name": "Korona",
+            "Img": "Assets/Sprites/CharaterImg/Korona_3.png",
+            "Type": 3,
+            "Lv": 1,
+            "Exp": 0,
+            "MaxHp": 120,
+            "AtkBuffValue": 5,
+            "DefBuffValue": 5,
+            "MagicBuffValue": 20,
+            "HealBuffValue": 10,
+            "SpeedBuffValue": 10
+        },
+        {
+            "id": 3,
+            "name": "Miasa",
+            "Img": "Assets/Sprites/CharaterImg/Miasa_4.png",
+            "Type": 4,
+            "Lv": 1,
+            "Exp": 0,
+            "MaxHp": 140,
+            "AtkBuffValue": 5,
+            "DefBuffValue": 6,
+            "MagicBuffValue": 8,
+            "HealBuffValue": 12,
+            "SpeedBuffValue": 9
+        }
+    ]
+}

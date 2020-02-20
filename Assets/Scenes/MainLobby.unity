@@ -1469,8 +1469,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1695829491}
-  - component: {fileID: 1695829493}
-  - component: {fileID: 1695829494}
   - component: {fileID: 1695829492}
   - component: {fileID: 1695829490}
   - component: {fileID: 1695829489}
@@ -1668,28 +1666,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FadeImage: {fileID: 1734382412}
---- !u!114 &1695829493
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1695829486}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe65cc6b1bccd4444bdb682cc0159168, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1695829494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1695829486}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebb25d5b3e8fc6e43a6e8f8ee191eea5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1699986592
 GameObject:
   m_ObjectHideFlags: 0
