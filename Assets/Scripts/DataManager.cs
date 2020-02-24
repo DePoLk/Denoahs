@@ -8,7 +8,7 @@ using Pathfinding.Serialization.JsonFx;
 
 
 public class DataManager : MonoBehaviour{
-
+    
     [System.Serializable]
     public class CharaterData
     {
@@ -24,6 +24,13 @@ public class DataManager : MonoBehaviour{
         public int MagicBuffValue;
         public int HealBuffValue;
         public int SpeedBuffValue;
+    }
+
+    [System.Serializable]
+    public class PlayerData
+    {
+        public int Gold;
+        public int RecruitCoin;
     }
 
     public static class JsonHelper
@@ -57,10 +64,10 @@ public class DataManager : MonoBehaviour{
 
     // Use this for initialization
     void Start () {
-
+        
        //CJD.IniCharaterData(); //初始化Json
 
-       //初始讀取
+       //初始讀取角色數據
         FileStream fs = new FileStream(Application.dataPath + "/GameData/CharaterData.json", FileMode.Open);
         StreamReader sr = new StreamReader(fs);
         // PlayerPrefs.SetString("JsonData", sr.ReadToEnd());
@@ -68,8 +75,13 @@ public class DataManager : MonoBehaviour{
         string LoadJson = sr.ReadToEnd();
 
         CharaterData[] GetLoadData = JsonHelper.FromJson<CharaterData>(LoadJson); // Json轉成物件
+        
+        fs.Close();
 
-        /*for(int i = 0; i < GetLoadData.Length; i++)
+
+
+        /*
+        for (int i = 0; i < GetLoadData.Length; i++)
         {
             Debug.Log("id: " + GetLoadData[i].id);
             Debug.Log("name: " + GetLoadData[i].name);
@@ -85,35 +97,15 @@ public class DataManager : MonoBehaviour{
             Debug.Log("Speed: " + GetLoadData[i].SpeedBuffValue);
             Debug.Log("---Next_Charater---");
 
-
-        }*/
-
-
-
-
-
-        fs.Close();
-
-
         
-        
-         
+        }// 檢測GetLoadData值*/
+
+
+
+
+
 
         //初始讀取
-
-        
-
-        //Debug.Log(PlayerPrefs.GetString("JsonData"));
-        /*Debug.Log("ID: " +LoadCharData.id);
-        Debug.Log("Name: " +LoadCharData.name);
-        Debug.Log("Img: " +LoadCharData.Img);
-        Debug.Log("Type: " +LoadCharData.Type);
-        for(int i = 0;i < LoadCharData.Stats.Capacity; i++)
-        {
-            Debug.Log("Stats" + "[" + i + "]: " + LoadCharData.Stats[i]);
-        }*/
-
-
     }
 
     // Update is called once per frame
@@ -143,6 +135,8 @@ public class DataManager : MonoBehaviour{
 
     }
 
+
+   
 
 }
 

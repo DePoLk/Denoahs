@@ -40,6 +40,12 @@ public class Charater
 
 }
 
+[System.Serializable]
+public class Player
+{
+    public int Gold;
+    public int RecruitCoin;
+}
 
 
 public static class JsonHelper
@@ -73,16 +79,18 @@ public static class JsonHelper
 
 class CreateJsonData : MonoBehaviour {
 
-    
+
+    int CharaterCount = 4; // 角色庫角色數量
 
     private void Start()
     {
         IniCharaterData();
+        IniPlayerData();
     }
    
     public  void IniCharaterData()
     {
-        Charater[] CharaterUnJsonData = new Charater[4];
+        Charater[] CharaterUnJsonData = new Charater[CharaterCount];
 
         CharaterUnJsonData[0] = new Charater(0,"Hidoru","Assets/Sprites/CharaterImg/Hidoru_1.png",1,1,0,150,15,7,5,8,15);
         CharaterUnJsonData[1] = new Charater(1, "Naia", "Assets/Sprites/CharaterImg/Naia_2.png", 2, 1,0, 220, 10, 15, 3, 5, 8);
@@ -90,18 +98,23 @@ class CreateJsonData : MonoBehaviour {
         CharaterUnJsonData[3] = new Charater(3, "Miasa", "Assets/Sprites/CharaterImg/Miasa_4.png", 4, 1, 0, 140, 5, 6, 8, 12, 9);
 
         string CharDataJson = JsonHelper.ToJson(CharaterUnJsonData, true); // 轉換Json
-       
-
 
         //輸出Json
         StreamWriter File = new StreamWriter(Application.dataPath + "/GameData/CharaterData.json");
         File.Write(CharDataJson);
         File.Close();
         //輸出Json
+
+
     }
 
+    public void IniPlayerData()
+    {
+        
+    }
 
-   
+    
+
 
 }
 
